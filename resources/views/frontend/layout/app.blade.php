@@ -31,6 +31,12 @@
     <!-- Include the Footer partial -->
     @include('frontend.layout.footer')
 
+    
+    <!-- Include the preloader partial -->
+    @include('frontend.preloader.type1')
+
+    
+
       <!-- Vendor JS-->
       <script src="frontend/js/vendor/modernizr-3.6.0.min.js"></script>
       <script src="frontend/js/vendor/jquery-3.6.0.min.js"></script>
