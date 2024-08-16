@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="frontend/css/main.css?v=5.3" />
 </head>
 <body>
+     <!-- Include the model partial -->
+     @include('frontend.model.type1')
+
 
     <!-- Include the Header partial -->
     @include('frontend.layout.header')
@@ -26,7 +29,8 @@
     <!-- Include the Topbar partial -->
     @include('frontend.layout.topbar')
 
-    @yield('content')
+    
+        @yield('content')
 
     <!-- Include the Footer partial -->
     @include('frontend.layout.footer')
