@@ -35,6 +35,9 @@
 
           <!-- Include the feature Categories slider partial -->
           @include('frontend.slider.feature_categories.type1')
+
+          <!-- Include the banner slider partial -->
+          @include('frontend.slider.banner.type1')
     </main>
         @yield('content')
 
