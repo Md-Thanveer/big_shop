@@ -45,6 +45,9 @@
             <!-- Include the daily best sells slider partial -->
             @include('frontend.slider.daily_best_sells.type1')
 
+             <!-- Include the popular product slider partial -->
+             @include('frontend.slider.deal_of_the_day.type1')
+
     </main>
         @yield('content')
 
