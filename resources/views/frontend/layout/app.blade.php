@@ -29,7 +29,10 @@
     <!-- Include the Topbar partial -->
     @include('frontend.layout.topbar')
 
-    
+    <main class="main">
+           <!-- Include the slider partial -->
+        @include('frontend.slider.type1')
+    </main>
         @yield('content')
 
     <!-- Include the Footer partial -->
