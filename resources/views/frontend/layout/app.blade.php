@@ -51,11 +51,14 @@
              <section class="section-padding mb-30">
                 <div class="container">
                     <div class="row">
-                    <!-- Include the popular product slider partial -->
-                    @include('frontend.slider.top_selling.type1')
+              <!-- Include the popular product slider partial -->
+              @include('frontend.slider.top_selling.type1')
 
-                    <!-- Include the trending_products slider partial -->
+            <!-- Include the trending_products slider partial -->
                     @include('frontend.slider.trending_products.type1')
+
+            <!-- Include the top_rated slider partial -->
+            @include('frontend.slider.top_rated.type1')
 
                     </div>
                 </div>
