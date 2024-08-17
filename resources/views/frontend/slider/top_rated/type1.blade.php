@@ -1,13 +1,13 @@
-<div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0 d-none d-lg-block wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
-    <h4 class="section-title style-1 mb-30 animated animated">Recently added</h4>
+<div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0 d-none d-xl-block wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+    <h4 class="section-title style-1 mb-30 animated animated">Top Rated</h4>
     <div class="product-list-small animated animated">
         <article class="row align-items-center hover-up">
             <figure class="col-md-4 mb-0">
-                <a href="shop-product-right.html"><img src="frontend/imgs/shop/thumbnail-7.jpg" alt="" /></a>
+                <a href="shop-product-right.html"><img src="frontend/imgs/shop/thumbnail-10.jpg" alt="" /></a>
             </figure>
             <div class="col-md-8 mb-0">
                 <h6>
-                    <a href="shop-product-right.html">Pepperidge Farm Farmhouse Hearty White Bread</a>
+                    <a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a>
                 </h6>
                 <div class="product-rate-cover">
                     <div class="product-rate d-inline-block">
@@ -23,11 +23,11 @@
         </article>
         <article class="row align-items-center hover-up">
             <figure class="col-md-4 mb-0">
-                <a href="shop-product-right.html"><img src="frontend/imgs/shop/thumbnail-8.jpg" alt="" /></a>
+                <a href="shop-product-right.html"><img src="frontend/imgs/shop/thumbnail-11.jpg" alt="" /></a>
             </figure>
             <div class="col-md-8 mb-0">
                 <h6>
-                    <a href="shop-product-right.html">Organic Frozen Triple Berry Blend</a>
+                    <a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a>
                 </h6>
                 <div class="product-rate-cover">
                     <div class="product-rate d-inline-block">
@@ -43,11 +43,11 @@
         </article>
         <article class="row align-items-center hover-up">
             <figure class="col-md-4 mb-0">
-                <a href="shop-product-right.html"><img src="frontend/imgs/shop/thumbnail-9.jpg" alt="" /></a>
+                <a href="shop-product-right.html"><img src="frontend/imgs/shop/thumbnail-12.jpg" alt="" /></a>
             </figure>
             <div class="col-md-8 mb-0">
                 <h6>
-                    <a href="shop-product-right.html">Oroweat Country Buttermilk Bread</a>
+                    <a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a>
                 </h6>
                 <div class="product-rate-cover">
                     <div class="product-rate d-inline-block">
