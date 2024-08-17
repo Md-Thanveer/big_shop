@@ -48,6 +48,18 @@
              <!-- Include the popular product slider partial -->
              @include('frontend.slider.deal_of_the_day.type1')
 
+             <section class="section-padding mb-30">
+                <div class="container">
+                    <div class="row">
+                    <!-- Include the popular product slider partial -->
+                    @include('frontend.slider.top_selling.type1')
+
+                    </div>
+                </div>
+            </section>
+            <!--End 4 columns-->
+
+
     </main>
         @yield('content')
 
