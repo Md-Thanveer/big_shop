@@ -15,4 +15,4 @@ use App\Http\Controllers\AuthController;
 Route::get('/forget_password',[AuthController::class, 'forget_password'])->name('home.forget_password');
 
 
-
+Route::get('/login', [HomeController::class, 'login'])->name('home.login');

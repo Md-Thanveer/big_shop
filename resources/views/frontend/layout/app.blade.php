@@ -30,6 +30,12 @@
     @include('frontend.layout.topbar')
 
     <main class="main">
+        @if (Request::is('/login'))
+        
+            @yield('content')
+        
+        @elseif (Request::is('/'))
+
            <!-- Include the slider partial -->
         @include('frontend.slider.type1')
 
@@ -68,9 +74,8 @@
             </section>
             <!--End 4 columns-->
 
-
+        @endif
     </main>
-        @yield('content')
 
     <!-- Include the Footer partial -->
     @include('frontend.layout.footer')
