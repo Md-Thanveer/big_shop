@@ -38,4 +38,11 @@ class AuthController extends Controller
         return view('frontend/auth/privacy_policy');
     }
 
+    public function terms(Request $request)
+    {
+        return view('frontend/auth/terms');
+    }
+
+    
+
 }

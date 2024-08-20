@@ -25,3 +25,5 @@ Route::get('/resetpassword',[AuthController::class, 'reset_password'])->name('ho
 Route::get('/myaccount',[AuthController::class, 'my_account'])->name('home.my_account');
 
 Route::get('/privacypolicy',[AuthController::class, 'privacy_policy'])->name('home.privacy_policy');
+
+Route::get('/terms',[AuthController::class, 'terms'])->name('home.terms');
