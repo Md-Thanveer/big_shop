@@ -10,6 +10,7 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/',[HomeController::class, 'index'])->name('home.index');
 
+
 use App\Http\Controllers\AuthController;
 
 Route::get('/forget_password',[AuthController::class, 'forget_password'])->name('home.forget_password');
@@ -22,3 +23,5 @@ Route::get('/register', [AuthController::class, 'register'])->name('home.registe
 Route::get('/resetpassword',[AuthController::class, 'reset_password'])->name('home.reset_password');
 
 Route::get('/myaccount',[AuthController::class, 'my_account'])->name('home.my_account');
+
+Route::get('/privacypolicy',[AuthController::class, 'privacy_policy'])->name('home.privacy_policy');

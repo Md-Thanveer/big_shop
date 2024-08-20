@@ -33,4 +33,9 @@ class AuthController extends Controller
         return view('frontend/auth/my_account');
     }
 
+    public function privacy_policy(Request $request)
+    {
+        return view('frontend/auth/privacy_policy');
+    }
+
 }
