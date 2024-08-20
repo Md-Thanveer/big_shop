@@ -11,8 +11,4 @@ class HomeController extends Controller
         return view('frontend/home');
     }
 
-    public function login(Request $request)
-    {
-        return view('frontend/auth/login');
-    }
 }
