@@ -30,11 +30,12 @@
     @include('frontend.layout.topbar')
 
     <main class="main">
-        @if (Request::is('/login'))
+
+        @if(Request::is('login'))
         
             @yield('content')
         
-        @elseif (Request::is('/'))
+        @elseif(Request::is('/'))
 
            <!-- Include the slider partial -->
         @include('frontend.slider.type1')
@@ -57,17 +58,17 @@
              <section class="section-padding mb-30">
                 <div class="container">
                     <div class="row">
-              <!-- Include the popular product slider partial -->
-              @include('frontend.slider.top_selling.type1')
+                    <!-- Include the popular product slider partial -->
+                    @include('frontend.slider.top_selling.type1')
 
-            <!-- Include the trending_products slider partial -->
+                    <!-- Include the trending_products slider partial -->
                     @include('frontend.slider.trending_products.type1')
 
-            <!-- Include the recently_added slider partial -->
-            @include('frontend.slider.recently_added.type1')
+                    <!-- Include the recently_added slider partial -->
+                    @include('frontend.slider.recently_added.type1')
 
-            <!-- Include the top_rated slider partial -->
-            @include('frontend.slider.top_rated.type1')
+                    <!-- Include the top_rated slider partial -->
+                    @include('frontend.slider.top_rated.type1')
 
                     </div>
                 </div>
