@@ -31,8 +31,8 @@
 
     <main class="main">
 
-        @if(Request::is('login'))
-        
+        @if(Request::is('login')||Request::is('register'))
+
             @yield('content')
         
         @elseif(Request::is('/'))
