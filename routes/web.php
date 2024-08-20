@@ -27,3 +27,6 @@ Route::get('/myaccount',[AuthController::class, 'my_account'])->name('home.my_ac
 Route::get('/privacypolicy',[AuthController::class, 'privacy_policy'])->name('home.privacy_policy');
 
 Route::get('/terms',[AuthController::class, 'terms'])->name('home.terms');
+
+
+Route::get('/error',[AuthController::class, 'error'])->name('home.page_not_found');

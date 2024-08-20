@@ -43,6 +43,11 @@ class AuthController extends Controller
         return view('frontend/auth/terms');
     }
 
+    public function error(Request $request)
+    {
+        return view('frontend/error/page_not_found');
+    }
+
     
 
 }
