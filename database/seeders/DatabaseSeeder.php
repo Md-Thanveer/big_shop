@@ -387,6 +387,12 @@ class DatabaseSeeder extends Seeder
             SubCategory::create($row);
         }
 
+        $this->call([
+
+            CountrySeeder::class,
+            StateSeeder::class,
+        ]);
+
 
 
     }
