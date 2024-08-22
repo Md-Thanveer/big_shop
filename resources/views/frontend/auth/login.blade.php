@@ -32,7 +32,8 @@ login page
                                         <h1 class="mb-5">Login</h1>
                                         <p class="mb-30">Don't have an account? <a href="page-register.html">Create here</a></p>
                                     </div>
-                                    <form method="post">
+                                    <form action="/authenticate" method="post">
+                                        @csrf
                                         <div class="form-group">
                                             <input type="text" required="" name="email" placeholder="Username or Email *" />
                                         </div>
@@ -41,7 +42,7 @@ login page
                                         </div>
                                         <div class="login_footer form-group">
                                             <div class="chek-form">
-                                                <input type="text" required="" name="email" placeholder="Security code *" />
+                                                <input type="text" required="" name="captcha" placeholder="Security code *" />
                                             </div>
                                             <span class="security-code">
                                                 <b class="text-new">8</b>
