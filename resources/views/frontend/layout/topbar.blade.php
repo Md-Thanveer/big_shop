@@ -16,10 +16,10 @@
                     {{ Auth::user()->name }} <!-- Display the user's name -->
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="{{ route('cart.index') }}">cart</a></li>
-                    <li><a class="dropdown-item" href="{{ route('order.index') }}">order</a></li>
-                    <li><a class="dropdown-item" href="{{ route('home.profile') }}">Profile</a></li>
-                    <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
+                    <li><a class="dropdown-item" href="#">cart</a></li>
+                    <li><a class="dropdown-item" href="#">order</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
 
                     
                 </ul>
