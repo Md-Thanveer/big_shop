@@ -176,6 +176,15 @@
                                 <a href="page-account.html"><span class="lable ml-0">Account</span></a>
                                 <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                     <ul>
+                                        @guest
+                                        <li>
+                                            <a href="{{ route('home.login') }}"><i class="fi fi-rs-user mr-10"></i>Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('home.register') }}"><i class="fi fi-rs-user mr-10"></i>Register</a>
+                                        </li>
+                                        @endguest
+                                        @if (Auth::check())
                                         <li>
                                             <a href="page-account.html"><i class="fi fi-rs-user mr-10"></i>My Account</a>
                                         </li>
@@ -192,8 +201,9 @@
                                             <a href="page-account.html"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a>
                                         </li>
                                         <li>
-                                            <a href="page-login.html"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a>
+                                            <a href="{{route('home.logout')}}"><i class="fi fi-rs-sign-out mr-10"></i>Log out</a>
                                         </li>
+                                        @endif
                                     </ul>
                                 </div>
                             </div>
