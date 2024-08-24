@@ -8,6 +8,8 @@ use Illuminate\Database\Seeder;
 
 use Illuminate\Support\Facades\Hash;
 
+use Spatie\Permission\Models\Role;
+
 use App\Models\Label;
 use App\Models\Tag;
 use App\Models\Brand;
@@ -386,6 +388,8 @@ class DatabaseSeeder extends Seeder
         {
             SubCategory::create($row);
         }
+
+        Role::create(['name' => 'Customer']);
 
         $this->call([
 

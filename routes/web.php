@@ -15,7 +15,6 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/forget_password',[AuthController::class, 'forget_password'])->name('home.forget_password');
 
-
 Route::get('/login', [AuthController::class, 'login'])->name('home.login');
 
 Route::post('/authenticate', [AuthController::class, 'authenticate'])->name('authenticate');
@@ -32,8 +31,12 @@ Route::get('/privacypolicy',[AuthController::class, 'privacy_policy'])->name('ho
 
 Route::get('/terms',[AuthController::class, 'terms'])->name('home.terms');
 
+Route::post('/store', [AuthController::class,'store'])->name('store');
+
 
 Route::get('/error',[AuthController::class, 'error'])->name('home.page_not_found');
+
+Route::post('/send-register-mail', [AuthController::class, 'sendRegisterMail']);
 
 
 use App\Http\Controllers\CartController;
@@ -58,3 +61,4 @@ Route::delete('/cart/{id}', [CartController::class, 'removeFromCart'])->name('ca
 
 // Clear cart route
 Route::post('/cart/clear', [CartController::class, 'clearCart'])->name('cart.clear');
+
