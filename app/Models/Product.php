@@ -63,4 +63,10 @@ class Product extends Model
     {
         return env('DOMAIN_URL') . Storage::url($this->image_path);
     }
+
+    public function productCompany()
+    {
+        return $this->belongsToMany(Company::class,'product_companies');
+    }
+
 }
