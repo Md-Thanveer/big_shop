@@ -10,6 +10,10 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/',[HomeController::class, 'index'])->name('home.index');
 
+// Product detail page
+Route::get('/products/{id}', [HomeController::class, 'show'])->name('product.show');
+
+
 
 use App\Http\Controllers\AuthController;
 
@@ -32,6 +36,8 @@ Route::get('/privacypolicy',[AuthController::class, 'privacy_policy'])->name('ho
 Route::get('/terms',[AuthController::class, 'terms'])->name('home.terms');
 
 Route::post('/store', [AuthController::class,'store'])->name('store');
+
+Route::get('/about',[AuthController::class, 'about'])->name('home.about');
 
 
 Route::get('/error',[AuthController::class, 'error'])->name('home.page_not_found');

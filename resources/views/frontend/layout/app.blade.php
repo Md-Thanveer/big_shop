@@ -38,10 +38,19 @@
         Request::is('myaccount')||
         Request::is('privacypolicy')||
         Request::is('terms')||
-        Request::is('error'))
+        Request::is('error')||
+        Request::routeIs('product.show')
+        )
 
             @yield('content')
-        
+
+        @elseif(
+        request()->query('category')
+        )
+
+            @yield('content')
+
+
         @elseif(Request::is('/'))
 
            <!-- Include the slider partial -->
