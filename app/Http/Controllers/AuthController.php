@@ -23,8 +23,15 @@ class AuthController extends Controller
     public function login(Request $request)
     {
 
-        // dd($request);
-        return view('frontend/auth/login');
+        $categories= Category::all();
+        $cities= City::all();
+
+        $data=[
+            'categories'=>$categories,
+            'cities'=>$cities
+        ];
+
+        return view('frontend/auth/login',$data);
     }
 
     public function authenticate(Request $request)
@@ -124,15 +131,17 @@ class AuthController extends Controller
             
             $user->assignRole($selectedRole->name);
 
+
+            // Call the sendRegisterMail function to send the email using class name(Authcontroller)
+            AuthController::sendRegisterMail($request);
+
             // Register successful, set success message            
             $request->session()->flash('success_message', 'User registered successfully');
-
-
-            // Call the sendRegisterMail function to send the email
-            $this->sendRegisterMail($request);
     
             // Redirect or return response
-            return redirect()->route('home.register')->with('success', 'Registration successful!');    
+            return redirect()->route('home.login')->with('success', 'Registration successful!');  
+            
+
         } 
         catch (ValidationException $e) {
             // return response()->json(['error' => $e->validator->errors()], 200);
@@ -172,7 +181,14 @@ class AuthController extends Controller
         return view('frontend/error/page_not_found');
     }
 
-    public function sendRegisterMail(Request $request)
+    public function about(Request $request)
+    {
+        return view('frontend/auth/about');
+    }
+
+    // static is used to call function without using object 
+     
+    public static function sendRegisterMail(Request $request)
     {
         $request->validate([
             'email' => 'required|email',

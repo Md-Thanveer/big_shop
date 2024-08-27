@@ -37,6 +37,9 @@ class ProductResource extends Resource
                 Forms\Components\CheckboxList::make('category_id')
                     ->relationship('category', 'name')
                     ->default(null),
+                Forms\Components\Select::make('product_company_id')
+                    ->relationship('productCompany', 'name')
+                    ->default(null),
                 Forms\Components\Select::make('brand_id')
                     // ->multiple()
                     ->preload()
